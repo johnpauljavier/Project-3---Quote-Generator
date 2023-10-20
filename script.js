@@ -5,7 +5,7 @@ const btn = document.querySelector("#btn");
 btn.addEventListener("click", getQuote);
 
 function getQuote() {
-    fetch("http://quotable.io/random")
+    fetch("https://quotable.io/random")
     .then(result => result.json())
     .then(data => {
         quote.innerHTML = `"${data.content}
